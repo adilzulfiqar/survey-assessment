@@ -1,0 +1,118 @@
+.main {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-self: center;
+    padding: 10px;
+    img {
+      align-self: center;
+      width: 80px;
+      height: 80px;
+      margin-right: 5px;
+    }
+
+    .top {
+      font-size: 14px;
+      .progress-bar {
+        border: 1px solid #000 !important;
+        .progress {
+          color: #000 !important;
+          background-color: #000 !important;
+        }
+      }
+      .evaluation-score {
+        border: 1px solid #000 !important;
+        padding: 10px;
+        margin-top: 10px;
+        p {
+          text-align: center;
+          font-weight: bolder;
+          margin-bottom: 3px;
+        }
+        span {
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          border: 1px solid black;
+          box-sizing: border-box;
+          padding: 5px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .survey {
+    .heading {
+      background: lightgrey;
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 10px;
+      > p {
+        align-self: center;
+        color: grey;
+        font-style: italic;
+      }
+    }
+    .results {
+      padding: 10px;
+      .top {
+        display: flex;
+        justify-content: space-between;
+        > p {
+          width: 200px;
+        }
+        span {
+          display: inline-block;
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          border: 1px solid black;
+          box-sizing: border-box;
+          padding: 5px;
+          font-weight: bolder;
+        }
+      }
+      .questionnaire {
+        margin-top: 20px;
+        height: 300px;
+        overflow-y: scroll;
+        .question {
+          margin: 10px 0;
+          border: 1px solid black;
+          .head {
+            border-bottom: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 14px;
+            span {
+              display: block;
+              text-align: center;
+              width: 100%;
+              border-left: 1px solid black;
+              &:first-of-type {
+                border: none;
+              }
+            }
+          }
+          p {
+            padding: 15px 5px;
+            text-align: center;
+          }
+        }
+        a {
+          display: inline-block;
+          padding: 10px 30px;
+          background: #424242;
+          color: white;
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

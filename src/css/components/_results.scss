@@ -1,0 +1,46 @@
+.results {
+  text-align: center;
+  padding: 30px 10px 0 10px;
+  img.logo {
+    height: 100px;
+    width: 100px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  .result {
+    margin-top: 50px;
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+      font-weight: lighter;
+    }
+
+    td,
+    th {
+      border: 1px solid #000;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    tr:first-of-type {
+      background: grey;
+      color: white;
+    }
+  }
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: none;
+    color: black;
+    border: 1px solid #424242;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
