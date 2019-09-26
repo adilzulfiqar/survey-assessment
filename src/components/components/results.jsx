@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
 
-function Results (props) {
+function Results(props) {
   return (
     <Fragment>
-      <div className='results'>
-        <img className='logo' src='images/avatar.png' alt='' />
+      <div className="results">
+        <img className="logo" src="images/avatar.png" alt="" />
         <p>
           [First Name] - Congratulations! Your results have been submited and a
           summary has also been emailed to you
         </p>
-        <div className='result'>
+        <div className="result">
           [Name] [Date]
           <table>
             <tr>
@@ -77,9 +78,9 @@ function Results (props) {
         <button>Print as PDF</button>
       </div>
     </Fragment>
-  )
+  );
 }
 
-Results.propTypes = {}
+Results.propTypes = {};
 
-export default Results
+export default Results;
