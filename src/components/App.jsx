@@ -5,8 +5,8 @@ import Bigin from './components/Bigin'
 import Info from './components/Info'
 import GetStarted from './components/GetStarted'
 import Caution from './components/Caution'
-import Survey from './components/survey'
-import Results from './components/results'
+import Survey from './components/Survey'
+import Results from './components/Results'
 
 const App = props => {
   return (

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-function results (props) {
+function Results (props) {
   return (
     <Fragment>
       <div className='results'>
@@ -80,6 +80,6 @@ function results (props) {
   )
 }
 
-results.propTypes = {}
+Results.propTypes = {}
 
-export default results
+export default Results
