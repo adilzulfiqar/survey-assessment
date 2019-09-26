@@ -6,7 +6,7 @@ import Info from "./components/Info";
 import GetStarted from "./components/GetStarted";
 import Caution from "./components/Caution";
 import Survey from "./components/Survey";
-import Results from "./components/Results";
+import Result from "./components/Result";
 
 const App = props => {
   return (
@@ -16,7 +16,7 @@ const App = props => {
       <Route exact path={"/getStarted"} component={GetStarted} />
       <Route exact path={"/caution"} component={Caution} />
       <Route exact path={"/survey"} component={Survey} />
-      <Route exact path={"/results"} component={Results} />
+      <Route exact path={"/result"} component={Result} />
     </Switch>
   );
 };

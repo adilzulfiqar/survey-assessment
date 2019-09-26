@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
-import PropTypes from "prop-types";
 
-function Results(props) {
+function Result(props) {
   return (
     <Fragment>
       <div className="results">
@@ -81,6 +80,6 @@ function Results(props) {
   );
 }
 
-Results.propTypes = {};
+Result.propTypes = {};
 
-export default Results;
+export default Result;
