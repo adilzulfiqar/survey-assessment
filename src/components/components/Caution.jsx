@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react";
 
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
+import { connect } from "react-redux";
 
-function Caution (props) {
+function Caution(props) {
   return (
     <Fragment>
-      <div className='caution'>
+      <div className="caution">
         <div>
-          <img className='logo' src='images/avatar.png' alt='' />
-          <img src='images/banner.png' alt='' className='banner' />
+          <img className="logo" src="images/avatar.png" alt="" />
+          <img src="images/banner.png" alt="" className="banner" />
           <p>
-            [First Name] <br />
+            {props.data.fullName} <br />
             Please remember, this is self-evaluation, not a test, There are no
             right or wrong answers. Only your personal truth, as it exists
             today. So, please answer as honestly and openly as possible. The
@@ -18,15 +19,24 @@ function Caution (props) {
             The evaluation should take approximately 2-3 minutes to complete,
             When you're finished we will email a summary of your scores.
           </p>
-          <div style={{ textAlign: 'right', marginRight: 10 }}>
-            <Link to='/survey'>Continue</Link>
+          <div style={{ textAlign: "right", marginRight: 10 }}>
+            <Link to="/survey">Continue</Link>
           </div>
         </div>
       </div>
     </Fragment>
-  )
+  );
 }
 
-Caution.propTypes = {}
+Caution.propTypes = {};
 
-export default Caution
+const mapStatetoProps = state => {
+  return {
+    data: state.personalInformation,
+  };
+};
+
+export default connect(
+  mapStatetoProps,
+  null
+)(Caution);

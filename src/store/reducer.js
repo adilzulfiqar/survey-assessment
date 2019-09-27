@@ -1,24 +1,24 @@
 import axios from "axios";
-import {
-} from "./actions/types";
-
+import { ABC } from "./actions/types";
 
 const initialState = {
-    //data
+  personalInformation: {
+    invitedBy: "",
+    fullName: "",
+    email: "",
+  },
 };
 
 const reducer = (state = initialState, action) => {
-    
-    switch (action.type) {
-        case "value":
-            
-            break;
-    
-        default:
-        return state;
-    }
-
-    
-}
+  switch (action.type) {
+    case ABC:
+      return {
+        ...state,
+        personalInformation: action.payload,
+      };
+    default:
+      return state;
+  }
+};
 
 export default reducer;

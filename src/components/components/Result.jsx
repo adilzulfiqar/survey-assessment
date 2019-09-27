@@ -1,6 +1,12 @@
 import React, { Fragment } from "react";
 
+import { connect } from "react-redux";
+
 function Result(props) {
+  var today = new Date();
+  var date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+
   return (
     <Fragment>
       <div className="results">
@@ -10,7 +16,7 @@ function Result(props) {
           summary has also been emailed to you
         </p>
         <div className="result">
-          [Name] [Date]
+          {props.data.fullName} {date}
           <table>
             <tr>
               <th>Mindset</th>
@@ -82,4 +88,13 @@ function Result(props) {
 
 Result.propTypes = {};
 
-export default Result;
+const mapStatetoProps = state => {
+  return {
+    data: state.personalInformation,
+  };
+};
+
+export default connect(
+  mapStatetoProps,
+  null
+)(Result);
